@@ -1,0 +1,17 @@
+{
+  "name": "syncup-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start": "npm run start -w frontend",
+    "server": "npm run dev -w backend",
+    "dev": "concurrently \"npm run start -w frontend\" \"npm run dev -w backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
