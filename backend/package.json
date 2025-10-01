@@ -1,0 +1,38 @@
+{
+  "name": "syncup-backend",
+  "version": "1.1.0",
+  "description": "Backend for SyncUp - Real-Time Collaborative Project Dashboard (Trello-style: Boards → Lists → Cards)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "postgresql",
+    "socket.io",
+    "trello-clone",
+    "realtime",
+    "backend"
+  ],
+  "author": "sameer",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
